@@ -1,6 +1,165 @@
-body {
+* {
   margin: 0;
-  background-color: #0f172a;
-  color: #e5e7eb;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top, #2a2a72, #0f0c29);
+  color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  background: rgba(15, 12, 41, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  color: #dbeafe;
+  text-decoration: none;
+}
+
+.logo {
+  color: #7aa2ff;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 140px 120px 80px;
+  min-height: 100vh;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero-text span {
+  color: #7aa2ff;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #e0e7ff;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 26px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #7aa2ff, #9f7aea);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #7aa2ff;
+  color: #7aa2ff;
+}
+
+/* IMAGE */
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 80px rgba(122, 162, 255, 0.6);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 120px;
+}
+
+.section h2 {
+  color: #7aa2ff;
+  margin-bottom: 20px;
+}
+
+/* GLASS */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+/* SKILLS */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  text-align: center;
+  padding: 20px;
+}
+
+/* PROJECTS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  padding: 25px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: #aaa;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 30px 60px;
+  }
+
+  .section {
+    padding: 60px 30px;
+  }
+
+  .navbar {
+    padding: 20px 30px;
+  }
 }

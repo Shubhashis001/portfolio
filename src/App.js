@@ -1,98 +1,105 @@
+import React from "react";
+import "./index.css";
+
 function App() {
-  const sectionStyle = {
-    background: "#020617",
-    padding: "30px",
-    borderRadius: "12px",
-    marginBottom: "30px"
-  };
-
-  const navStyle = {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    width: "100%",
-    background: "#020617",
-    padding: "15px 0",
-    textAlign: "center",
-    zIndex: 1000
-  };
-
-  const linkStyle = {
-    margin: "0 15px",
-    color: "#38bdf8",
-    textDecoration: "none",
-    fontWeight: "bold"
-  };
-
   return (
-    <>
+    <div className="app">
       {/* NAVBAR */}
-      <div style={navStyle}>
-        <a href="#about" style={linkStyle}>About</a>
-        <a href="#skills" style={linkStyle}>Skills</a>
-        <a href="#projects" style={linkStyle}>Projects</a>
-        <a href="#education" style={linkStyle}>Education</a>
-        <a href="#contact" style={linkStyle}>Contact</a>
-      </div>
+      <nav className="navbar">
+        <h2 className="logo">Shubhashis</h2>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-      {/* CONTENT */}
-      <div style={{ padding: "120px 60px", maxWidth: "900px", margin: "auto" }}>
-        <h1 style={{ color: "#38bdf8" }}>Shubhashis Sarkar</h1>
-        <h2>B.Tech CSE (Data Science)</h2>
-        <p>Student at Brainware University</p>
-
-        <div id="about" style={sectionStyle}>
-          <h2>About Me</h2>
+      {/* HERO SECTION */}
+      <section className="hero">
+        <div className="hero-text">
+          <h1>
+            Hi, I am <br />
+            <span>Shubhashis Sarkar</span>
+          </h1>
           <p>
-            I am a Computer Science student specializing in Data Science.
-            I am interested in programming, problem solving, and learning
-            new technologies. My goal is to build real-world applications
-            and grow as a software developer.
+            B.Tech CSE (Data Science) <br />
+            Brainware University
           </p>
+
+          <div className="hero-buttons">
+            {/* ✅ RESUME BUTTON (CORRECT & WORKING) */}
+            <a
+              href="/resume.pdf"
+              download
+              className="btn"
+            >
+              Download Resume
+            </a>
+
+            <a href="#contact" className="btn outline">
+              Contact Me
+            </a>
+          </div>
         </div>
 
-        <div id="skills" style={sectionStyle}>
-          <h2>Skills</h2>
-          <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React (Beginner)</li>
-            <li>Data Structures (Basics)</li>
-            <li>Git & GitHub</li>
-          </ul>
+        <div className="hero-image">
+          <img src="/profile.png" alt="Profile" />
         </div>
+      </section>
 
-        <div id="projects" style={sectionStyle}>
-          <h2>Projects</h2>
-          <h3 style={{ color: "#38bdf8" }}>AI Assistant</h3>
-          <p>
-            Developed an AI Assistant that can interact with users,
-            understand natural language queries, and provide intelligent
-            responses using AI concepts.
-          </p>
-          <p><b>Technologies:</b> Python, OpenAI API</p>
-        </div>
+      {/* ABOUT */}
+      <section id="about" className="section glass">
+        <h2>About Me</h2>
+        <p>
+          I am a Computer Science student specializing in Data Science.
+          I enjoy programming, problem solving, and building real-world
+          applications using modern technologies.
+        </p>
+      </section>
 
-        <div id="education" style={sectionStyle}>
-          <h2>Education</h2>
-          <p>
-            <b>Bachelor of Technology (B.Tech)</b><br />
-            Computer Science & Engineering (Data Science)<br />
-            Brainware University<br />
-            2022 – Present
-          </p>
+      {/* SKILLS */}
+      <section id="skills" className="section">
+        <h2>Skills</h2>
+        <div className="skill-grid">
+          <div className="glass card">Python</div>
+          <div className="glass card">Java</div>
+          <div className="glass card">C</div>
+          <div className="glass card">HTML & CSS</div>
+          <div className="glass card">JavaScript</div>
+          <div className="glass card">React</div>
+          <div className="glass card">Data Structures</div>
+          <div className="glass card">Git & GitHub</div>
         </div>
+      </section>
 
-        <div id="contact" style={sectionStyle}>
-          <h2>Contact</h2>
-          <p>Email: your-email@gmail.com</p>
-          <p>GitHub: github.com/your-username</p>
-          <p>LinkedIn: linkedin.com/in/your-profile</p>
+      {/* PROJECTS */}
+      <section id="projects" className="section">
+        <h2>Projects</h2>
+        <div className="project-grid">
+          <div className="glass project-card">
+            <h3>AI Assistant</h3>
+            <p>AI assistant using NLP and OpenAI API.</p>
+          </div>
+          <div className="glass project-card">
+            <h3>Portfolio Website</h3>
+            <p>React portfolio deployed on Vercel.</p>
+          </div>
         </div>
-      </div>
-    </>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="section glass">
+        <h2>Contact</h2>
+        <p>Email: shubhashissarkar375@gmail.com</p>
+        <p>GitHub: https://github.com/Shubhashis001</p>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="footer">
+        © 2025 Shubhashis Sarkar
+      </footer>
+    </div>
   );
 }
 
