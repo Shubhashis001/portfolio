@@ -121,12 +121,6 @@ body {
 .card {
   text-align: center;
   padding: 20px;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 15px 30px rgba(122, 162, 255, 0.35);
 }
 
 /* PROJECTS */
@@ -138,44 +132,30 @@ body {
 
 .project-card {
   padding: 25px;
-  transition: all 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(122, 162, 255, 0.3);
-}
-
-/* CONTACT */
-.contact-links {
+/* ICON-ONLY CONTACT */
+.icon-links {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #dbeafe;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.3s ease;
-}
-
-.contact-item:hover {
-  transform: translateX(8px) scale(1.05);
-  box-shadow: 0 10px 25px rgba(122, 162, 255, 0.4);
-}
-
-.icon {
-  font-size: 22px;
+.icon-btn {
+  font-size: 34px;
   color: #7aa2ff;
-  transition: transform 0.3s ease;
+  padding: 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
 }
 
-.contact-item:hover .icon {
-  transform: rotate(8deg) scale(1.2);
+.icon-btn:hover {
+  transform: translateY(-8px) scale(1.2);
+  background: #7aa2ff;
+  color: #0f0c29;
+  box-shadow: 0 15px 35px rgba(122, 162, 255, 0.6);
 }
 
 /* FOOTER */

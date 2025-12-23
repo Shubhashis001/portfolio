@@ -24,6 +24,7 @@ function App() {
             Hi, I am <br />
             <span>Shubhashis Sarkar</span>
           </h1>
+
           <p>
             B.Tech CSE (Data Science) <br />
             Brainware University
@@ -83,37 +84,37 @@ function App() {
         </div>
       </section>
 
-      {/* CONTACT */}
+      {/* CONTACT – ICON ONLY */}
       <section id="contact" className="section glass">
         <h2>Contact</h2>
 
-        <div className="contact-links">
+        <div className="icon-links">
           <a
             href="mailto:shubhashissarkar375@gmail.com"
-            className="contact-item"
+            className="icon-btn"
+            title="Email"
           >
-            <FaEnvelope className="icon" />
-            shubhashissarkar375@gmail.com
+            <FaEnvelope />
           </a>
 
           <a
             href="https://github.com/Shubhashis001"
             target="_blank"
             rel="noopener noreferrer"
-            className="contact-item"
+            className="icon-btn"
+            title="GitHub"
           >
-            <FaGithub className="icon" />
-            github.com/Shubhashis001
+            <FaGithub />
           </a>
 
           <a
             href="https://www.linkedin.com/in/shubhashis-sarkar-s1"
             target="_blank"
             rel="noopener noreferrer"
-            className="contact-item"
+            className="icon-btn"
+            title="LinkedIn"
           >
-            <FaLinkedin className="icon" />
-            linkedin.com/in/shubhashis-sarkar-s1
+            <FaLinkedin />
           </a>
         </div>
       </section>
@@ -122,6 +123,7 @@ function App() {
       <footer className="footer">
         © 2025 Shubhashis Sarkar
       </footer>
+
     </div>
   );
 }
