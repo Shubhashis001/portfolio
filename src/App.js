@@ -16,7 +16,7 @@ function App() {
         </ul>
       </nav>
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section className="hero">
         <div className="hero-text">
           <h1>
@@ -30,11 +30,9 @@ function App() {
           </p>
 
           <div className="hero-buttons">
-            {/* RESUME BUTTON */}
             <a href="/resume.pdf" download className="btn">
               Download Resume
             </a>
-
             <a href="#contact" className="btn outline">
               Contact Me
             </a>
@@ -79,7 +77,6 @@ function App() {
             <h3>AI Assistant</h3>
             <p>AI assistant using NLP and OpenAI API.</p>
           </div>
-
           <div className="glass project-card">
             <h3>Portfolio Website</h3>
             <p>React portfolio deployed on Vercel.</p>
@@ -92,8 +89,6 @@ function App() {
         <h2>Contact</h2>
 
         <div className="contact-links">
-
-          {/* EMAIL → OPENS GMAIL DIRECTLY */}
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=shubhashissarkar375@gmail.com"
             target="_blank"
@@ -103,7 +98,6 @@ function App() {
             📧 shubhashissarkar375@gmail.com
           </a>
 
-          {/* GITHUB */}
           <a
             href="https://github.com/Shubhashis001"
             target="_blank"
@@ -113,6 +107,14 @@ function App() {
             🐙 github.com/Shubhashis001
           </a>
 
+          <a
+            href="https://www.linkedin.com/in/shubhashis-sarkar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-item"
+          >
+            💼 linkedin.com/in/shubhashis-sarkar
+          </a>
         </div>
       </section>
 
