@@ -39,6 +39,10 @@ body {
   text-shadow: 0 0 12px #7aa2ff;
 }
 
+.logo {
+  color: #7aa2ff;
+}
+
 /* ================= HERO ================= */
 .hero {
   display: flex;
@@ -158,28 +162,41 @@ body {
   box-shadow: 0 20px 45px rgba(122, 162, 255, 0.7);
 }
 
-/* ================= ICON CONTACT ================= */
+/* ================= CONTACT ICONS (SPECIAL) ================= */
+
 .icon-links {
   display: flex;
-  gap: 25px;
+  gap: 50px;               /* MORE DISTANCE */
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+@keyframes contactGlow {
+  0% {
+    box-shadow: 0 0 15px rgba(122, 162, 255, 0.6);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(122, 162, 255, 1);
+    transform: scale(1.12);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(122, 162, 255, 0.6);
+    transform: scale(1);
+  }
 }
 
 .icon-btn {
   font-size: 34px;
   color: #7aa2ff;
-  padding: 18px;
+  padding: 20px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
-  transition: 0.3s;
+  animation: contactGlow 2.2s infinite ease-in-out; /* ALWAYS GLOW + BEAT */
 }
 
 .icon-btn:hover {
-  transform: translateY(-10px) scale(1.25);
-  background: #7aa2ff;
-  color: #0f0c29;
-  box-shadow: 0 20px 45px rgba(122, 162, 255, 0.9);
+  box-shadow: 0 0 60px rgba(122, 162, 255, 1);
 }
 
 /* ================= FOOTER ================= */
