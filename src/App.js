@@ -30,12 +30,8 @@ function App() {
           </p>
 
           <div className="hero-buttons">
-            {/* RESUME */}
-            <a
-              href="/resume.pdf"
-              download
-              className="btn"
-            >
+            {/* RESUME BUTTON */}
+            <a href="/resume.pdf" download className="btn">
               Download Resume
             </a>
 
@@ -96,14 +92,15 @@ function App() {
         <h2>Contact</h2>
 
         <div className="contact-links">
-          {/* EMAIL */}
+
+          {/* EMAIL → OPENS GMAIL DIRECTLY */}
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=shubhashissarkar375@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-item"
           >
-             📧 shubhashissarkar375@gmail.com
+            📧 shubhashissarkar375@gmail.com
           </a>
 
           {/* GITHUB */}
@@ -115,6 +112,7 @@ function App() {
           >
             🐙 github.com/Shubhashis001
           </a>
+
         </div>
       </section>
 
