@@ -156,6 +156,8 @@ body {
 }
 
 .contact-item {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #7aa2ff;
   font-size: 18px;
@@ -169,6 +171,15 @@ body {
 .contact-item:hover {
   background: #7aa2ff;
   color: #0f0c29;
+}
+
+/* ICON STYLE (IMPORTANT) */
+.icon {
+  font-size: 22px;
+}
+
+.contact-item span {
+  margin-left: 10px;
 }
 
 /* ================= FOOTER ================= */
