@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import "./index.css";
 
 function App() {
@@ -24,7 +24,6 @@ function App() {
             Hi, I am <br />
             <span>Shubhashis Sarkar</span>
           </h1>
-
           <p>
             B.Tech CSE (Data Science) <br />
             Brainware University
@@ -65,7 +64,6 @@ function App() {
           <div className="glass card">HTML & CSS</div>
           <div className="glass card">JavaScript</div>
           <div className="glass card">React</div>
-          <div className="glass card">Data Structures</div>
           <div className="glass card">Git & GitHub</div>
         </div>
       </section>
@@ -75,30 +73,27 @@ function App() {
         <h2>Projects</h2>
         <div className="project-grid">
           <div className="glass project-card">
-            <h3>AI Assistant</h3>
-            <p>AI assistant using NLP and OpenAI API.</p>
-          </div>
-          <div className="glass project-card">
             <h3>Portfolio Website</h3>
             <p>React portfolio deployed on Vercel.</p>
+          </div>
+          <div className="glass project-card">
+            <h3>AI Assistant</h3>
+            <p>AI assistant using NLP concepts.</p>
           </div>
         </div>
       </section>
 
-      {/* CONTACT WITH REAL ICONS */}
+      {/* CONTACT */}
       <section id="contact" className="section glass">
         <h2>Contact</h2>
 
         <div className="contact-links">
-
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=shubhashissarkar375@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:shubhashissarkar375@gmail.com"
             className="contact-item"
           >
             <FaEnvelope className="icon" />
-            <span>Email</span>
+            shubhashissarkar375@gmail.com
           </a>
 
           <a
@@ -108,7 +103,7 @@ function App() {
             className="contact-item"
           >
             <FaGithub className="icon" />
-            <span>GitHub</span>
+            github.com/Shubhashis001
           </a>
 
           <a
@@ -118,9 +113,8 @@ function App() {
             className="contact-item"
           >
             <FaLinkedin className="icon" />
-            <span>LinkedIn</span>
+            linkedin.com/in/shubhashis-sarkar-s1
           </a>
-
         </div>
       </section>
 
@@ -128,7 +122,6 @@ function App() {
       <footer className="footer">
         © 2025 Shubhashis Sarkar
       </footer>
-
     </div>
   );
 }
