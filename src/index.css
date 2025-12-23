@@ -32,15 +32,11 @@ body {
 .navbar a {
   color: #dbeafe;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .navbar a:hover {
   text-shadow: 0 0 12px #7aa2ff;
-}
-
-.logo {
-  color: #7aa2ff;
 }
 
 /* ================= HERO ================= */
@@ -73,24 +69,18 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  box-shadow: 0 0 20px rgba(122, 162, 255, 0.8);
-  transform: translateY(-3px);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(122, 162, 255, 0.6);
 }
 
 .btn.outline {
   background: transparent;
   border: 2px solid #7aa2ff;
   color: #7aa2ff;
-}
-
-.btn.outline:hover {
-  background: #7aa2ff;
-  color: #0f0c29;
-  box-shadow: 0 0 25px rgba(122, 162, 255, 0.9);
 }
 
 /* ================= IMAGE ================= */
@@ -100,17 +90,12 @@ body {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 80px rgba(122, 162, 255, 0.6);
-  animation: float 4s ease-in-out infinite;
+  transition: 0.3s;
 }
 
 .hero-image img:hover {
-  box-shadow: 0 0 120px rgba(122, 162, 255, 1);
-}
-
-@keyframes float {
-  50% {
-    transform: translateY(-15px);
-  }
+  transform: scale(1.05);
+  box-shadow: 0 20px 45px rgba(122, 162, 255, 0.8);
 }
 
 /* ================= SECTIONS ================= */
@@ -130,11 +115,12 @@ body {
   border-radius: 16px;
   padding: 40px;
   margin-bottom: 40px;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .glass:hover {
-  box-shadow: 0 0 35px rgba(122, 162, 255, 0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(122, 162, 255, 0.6);
 }
 
 /* ================= SKILLS ================= */
@@ -147,12 +133,12 @@ body {
 .card {
   text-align: center;
   padding: 20px;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 0 30px rgba(122, 162, 255, 0.7);
+  box-shadow: 0 20px 40px rgba(122, 162, 255, 0.6);
 }
 
 /* ================= PROJECTS ================= */
@@ -164,15 +150,15 @@ body {
 
 .project-card {
   padding: 25px;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 40px rgba(122, 162, 255, 0.8);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 45px rgba(122, 162, 255, 0.7);
 }
 
-/* ================= ICON-ONLY CONTACT ================= */
+/* ================= ICON CONTACT ================= */
 .icon-links {
   display: flex;
   gap: 25px;
@@ -186,14 +172,14 @@ body {
   padding: 18px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .icon-btn:hover {
   transform: translateY(-10px) scale(1.25);
   background: #7aa2ff;
   color: #0f0c29;
-  box-shadow: 0 0 45px rgba(122, 162, 255, 1);
+  box-shadow: 0 20px 45px rgba(122, 162, 255, 0.9);
 }
 
 /* ================= FOOTER ================= */
