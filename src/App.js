@@ -98,10 +98,12 @@ function App() {
         <div className="contact-links">
           {/* EMAIL */}
           <a
-            href="mailto:shubhashissarkar375@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=shubhashissarkar375@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="contact-item"
           >
-            📧 shubhashissarkar375@gmail.com
+             📧 shubhashissarkar375@gmail.com
           </a>
 
           {/* GITHUB */}
