@@ -4,6 +4,7 @@ import "./index.css";
 function App() {
   return (
     <div className="app">
+
       {/* NAVBAR */}
       <nav className="navbar">
         <h2 className="logo">Shubhashis</h2>
@@ -22,13 +23,14 @@ function App() {
             Hi, I am <br />
             <span>Shubhashis Sarkar</span>
           </h1>
+
           <p>
             B.Tech CSE (Data Science) <br />
             Brainware University
           </p>
 
           <div className="hero-buttons">
-            {/* ✅ RESUME BUTTON (CORRECT & WORKING) */}
+            {/* RESUME */}
             <a
               href="/resume.pdf"
               download
@@ -81,6 +83,7 @@ function App() {
             <h3>AI Assistant</h3>
             <p>AI assistant using NLP and OpenAI API.</p>
           </div>
+
           <div className="glass project-card">
             <h3>Portfolio Website</h3>
             <p>React portfolio deployed on Vercel.</p>
@@ -91,14 +94,33 @@ function App() {
       {/* CONTACT */}
       <section id="contact" className="section glass">
         <h2>Contact</h2>
-        <p>Email: shubhashissarkar375@gmail.com</p>
-        <p>GitHub: https://github.com/Shubhashis001</p>
+
+        <div className="contact-links">
+          {/* EMAIL */}
+          <a
+            href="mailto:shubhashissarkar375@gmail.com"
+            className="contact-item"
+          >
+            📧 shubhashissarkar375@gmail.com
+          </a>
+
+          {/* GITHUB */}
+          <a
+            href="https://github.com/Shubhashis001"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-item"
+          >
+            🐙 github.com/Shubhashis001
+          </a>
+        </div>
       </section>
 
       {/* FOOTER */}
       <footer className="footer">
         © 2025 Shubhashis Sarkar
       </footer>
+
     </div>
   );
 }

@@ -11,7 +11,7 @@ body {
   color: #ffffff;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -32,13 +32,15 @@ body {
 .navbar a {
   color: #dbeafe;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .logo {
   color: #7aa2ff;
+  font-weight: 700;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
   display: flex;
   align-items: center;
@@ -66,7 +68,7 @@ body {
   gap: 20px;
 }
 
-/* BUTTONS */
+/* ================= BUTTONS ================= */
 .btn {
   padding: 12px 26px;
   border-radius: 8px;
@@ -74,6 +76,11 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
 }
 
 .btn.outline {
@@ -82,7 +89,7 @@ body {
   color: #7aa2ff;
 }
 
-/* IMAGE */
+/* ================= IMAGE ================= */
 .hero-image img {
   width: 300px;
   height: 300px;
@@ -98,7 +105,7 @@ body {
   }
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 .section {
   padding: 80px 120px;
 }
@@ -108,7 +115,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* GLASS */
+/* ================= GLASS ================= */
 .glass {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(15px);
@@ -117,7 +124,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* SKILLS */
+/* ================= SKILLS ================= */
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -129,7 +136,7 @@ body {
   padding: 20px;
 }
 
-/* PROJECTS */
+/* ================= PROJECTS ================= */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -140,14 +147,38 @@ body {
   padding: 25px;
 }
 
-/* FOOTER */
+/* ================= CONTACT ================= */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  text-decoration: none;
+  color: #7aa2ff;
+  font-size: 18px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  background: #7aa2ff;
+  color: #0f0c29;
+}
+
+/* ================= FOOTER ================= */
 .footer {
   text-align: center;
   padding: 30px;
   color: #aaa;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
